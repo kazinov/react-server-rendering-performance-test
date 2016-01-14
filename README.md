@@ -1,4 +1,4 @@
-## simple React universal/isomorphic app example 
+## Simple React universal/isomorphic app example 
 
 To build the app you should have webpack installed:
 
