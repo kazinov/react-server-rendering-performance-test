@@ -1,15 +1,18 @@
-## Simple React universal/isomorphic app example 
+## React server rendering performance test
 
-To build the app you should have webpack installed:
+The goal is to compare React serer rendering performace with template engines like jade, dot, etc.
+Each tool generates simple html page which contains 1000 div elements with some nested div elements.
 
+Start test:
 ```
-npm install webpack -g
-```
-
-Build and start the server:
-```
-cd [project-folder]
 npm install
-webpack
-node lib/server.js 
+node lib/test.js
+```
+
+Results (NODE_ENV='production'):
+```
+react: 62ms
+jade: 32ms
+dot: 1ms
+ejs: 5ms
 ```
